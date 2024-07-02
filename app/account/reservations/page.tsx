@@ -9,8 +9,7 @@ export const metadata = {
 export default async function Reservations() {
   // CHANGE
   const session = await auth();
-  const bookings: any = await getBookings(session?.user.guestId);
-  console.log(bookings);
+  const bookings = await getBookings(session?.user.guestId);
 
   return (
     <div>
