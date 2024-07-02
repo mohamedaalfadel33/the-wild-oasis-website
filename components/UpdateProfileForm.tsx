@@ -1,7 +1,4 @@
-'use client';
-
 import { updateGuest } from '@/lib/actions';
-import { useFormStatus } from 'react-dom';
 import SubmitButton from './SubmitButton';
 
 export default function UpdateProfileForm({
