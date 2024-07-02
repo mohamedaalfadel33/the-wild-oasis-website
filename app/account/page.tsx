@@ -2,7 +2,7 @@ import { auth } from '@/lib/auth';
 import React from 'react';
 
 export const metadata = {
-  title: 'Gest area',
+  title: 'Guest area',
 };
 
 export default async function Account() {

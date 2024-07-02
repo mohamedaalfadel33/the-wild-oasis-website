@@ -27,7 +27,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "lib/data-service.js",
-    "lib/auth.ts"
-, "lib/actions.js", "app/account/reservations/page.jsx"  ],
+    "lib/auth.ts",
+    "lib/actions.js",
+    "app/account/reservations/page.jsx"
+  ],
   "exclude": ["node_modules"]
 }

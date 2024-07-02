@@ -1,12 +1,10 @@
-import ReservationCard from '@/components/ReservationCard';
+import ReservationList from '@/components/ReservationList';
 import { auth } from '@/lib/auth';
 import { getBookings } from '@/lib/data-service';
 
 export const metadata = {
   title: 'Reservations',
 };
-
-
 
 export default async function Reservations() {
   // CHANGE
@@ -27,11 +25,7 @@ export default async function Reservations() {
           </a>
         </p>
       ) : (
-        <ul className="space-y-6">
-          {bookings.map((booking) => (
-            <ReservationCard booking={booking} key={booking.id} />
-          ))}
-        </ul>
+        <ReservationList bookings={bookings} />
       )}
     </div>
   );
