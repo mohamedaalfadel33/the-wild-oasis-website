@@ -28,6 +28,6 @@
     ".next/types/**/*.ts",
     "lib/data-service.js",
     "lib/auth.ts"
-  ],
+, "lib/actions.js"  ],
   "exclude": ["node_modules"]
 }
