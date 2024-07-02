@@ -6,6 +6,8 @@ export const metadata = {
   title: 'Reservations',
 };
 
+
+
 export default async function Reservations() {
   // CHANGE
   const session = await auth();
@@ -26,7 +28,7 @@ export default async function Reservations() {
         </p>
       ) : (
         <ul className="space-y-6">
-          {bookings.map((booking: any) => (
+          {bookings.map((booking) => (
             <ReservationCard booking={booking} key={booking.id} />
           ))}
         </ul>
